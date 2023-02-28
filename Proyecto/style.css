@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    height: 100%
+}
+
+body {
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,0.5) 0%, rgba(255,102,0,0.5) 35%, rgba(255,149,0,0.5) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.contenedor {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 1200px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 1);
+}
+
+
+
+.contenedor .aside-izquierda {
+    position: relative;
+    padding: 40px;
+}
+
+.presentacion, .experiencia {
+    margin-bottom: 50px;
+}
+
+.experiencia-titulo {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.experiencia-contenedor {
+    display: flex;
+    flex-direction:row;
+    margin: 30px 0;
+}
+
+.empresa {
+    min-width: 200px;
+}
+
+.empresa h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.texto h4 {
+    text-transform: uppercase;
+    color: rgb(255, 100, 100, 1);
+    font-size: 16px;
+}
+
+/**
+lado derecho
+*/
+
+.contenedor .aside-derecha {
+    position: relative;
+    background: #ffd49c;
+    padding: 40px;
+}
+
+.perfil {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.perfil .img-perfil {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    overflow: hidden;
+}
+
+.perfil .img-perfil img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil h1 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.perfil h1 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.perfil .botones-perfil-aside {
+    align-items: center;
+    justify-content: center;
+}
+
+.info-perfil {
+    padding-top:20px ;
+    padding-bottom: 20px;
+}
+
+.info-perfil h3 {
+    padding-bottom: 10px;
+}
+
+.perfil-titulo {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+ul {
+    list-style:none ;
+}
+
+.info-perfil ul {
+    position: relative;
+}
+
+.info-perfil ul li {
+    position: relative;
+    margin:10px 0;
+}
+
+.info-perfil ul li #icono {
+    display:inline;
+    width: 300px;
+    font-size: 25px;
+    color: rgb(255, 100, 100, 1);
+}
+
+.info-perfil ul li .texto {
+    font-weight: 300; 
+}
+
+.educacion {
+    padding-top: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0);
+}
+
+.educacion-titulo {
+    text-align: center;
+}
+
+.educacion h3 {
+    padding-bottom: 20px;
+}
+
+.educacion li {
+    margin-bottom: 15px;
+}
+
+.educacion h5 {
+    font-weight: 500;
+}
+
+.educacion h4 {
+    font-weight: 500;
+}
+
+.lenguaje {
+    padding-top: 20px;
+}
+
+.lenguaje h3 {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.lenguaje-texto {
+    
+}
+
+.lenguaje-porcentaje {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.lenguaje-porcentaje div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(255, 100, 100, 1);
+}
+
+@media(max-width:1058px) {
+    .contenedor {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .aside-derecha {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width:600px) {
+    .experiencia-contenedor {
+        flex-direction: column;
+    }
+
+    .empresa {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width:340px) {
+    .botones-perfil-aside {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width:317px) {
+    .botones-perfil-aside {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
